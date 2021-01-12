@@ -21,7 +21,6 @@ class Block(object):
         return hashlib.sha256(string_block.encode()).hexdigest()
 
 
-
     def __repr__(self):
 
         return "{} - {} - {} - {} - {}".format(self.index, self.proof_number, self.previous_hash, self.data, self.timestamp)
@@ -50,11 +49,8 @@ class BlockChain(object):
         )
 
 
-
         self.current_data = []
-
         self.chain.append(block)
-
 
         return block
 
@@ -65,22 +61,11 @@ class BlockChain(object):
     def confirm_validity(block, previous_block):
 
         if previous_block.index + 1  != block.index:
-
-
             return False
-
-
         elif previous_block.compute_hash != block.previous_hash:
-
-
             return False
-
-
         elif block.timestamp &lt != previous_block.timestamp:
-
-
             return False
-
 
         return True
 
@@ -88,7 +73,6 @@ class BlockChain(object):
 
 
     def get_data(self, sender, receiver, amount):
-
 
         self.current_data.append({
 
@@ -106,6 +90,7 @@ class BlockChain(object):
 
 
     def proof_of_work(last_proof):
+
         pass
 
 
@@ -114,9 +99,11 @@ class BlockChain(object):
 
 
     def latest_block(self):
+        
         return self.chain[-1]
 
     def chain_validity(self):
+        
         pass
 
 

@@ -160,7 +160,7 @@ proof_number = blockchain.proof_of_work(last_proof_number)
 blockchain.get_data(
 
     sender="", #this means that this node has constructed another block
-    receiver="miky_mouse_is_in_the_house",
+    receiver="supertren_foroestafas__mouse_is_in_the_house",
     amount=1, #building a new block (or figuring out the proof number) is awarded with
 )
 

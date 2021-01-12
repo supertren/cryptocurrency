@@ -26,7 +26,7 @@ class Block(object):
         return "{} - {} - {} - {} - {}".format(self.index, self.proof_number, self.previous_hash, self.data, self.timestamp)
 
 
- class BlockChain(object):
+class BlockChain(object):
 
     def __init__(self):
 

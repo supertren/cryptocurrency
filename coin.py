@@ -26,7 +26,7 @@ class Block(object):
         return "{} - {} - {} - {} - {}".format(self.index, self.proof_number, self.previous_hash, self.data, self.timestamp)
 
 
-class BlockChain(object):
+ class BlockChain(object):
 
     def __init__(self):
 
@@ -147,7 +147,7 @@ class BlockChain(object):
 
 blockchain = BlockChain()
 
-print("GET READY MINING ABOUT TO START")
+print("Get Ready .... mining about to start")
 
 print(blockchain.chain)
 
@@ -160,7 +160,7 @@ proof_number = blockchain.proof_of_work(last_proof_number)
 blockchain.get_data(
 
     sender="", #this means that this node has constructed another block
-    receiver="LiveEdu.tv",
+    receiver="miky_mouse_is_in_the_house",
     amount=1, #building a new block (or figuring out the proof number) is awarded with
 )
 

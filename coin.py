@@ -64,7 +64,7 @@ class BlockChain(object):
             return False
         elif previous_block.compute_hash != block.previous_hash:
             return False
-        elif block.timestamp &lt != previous_block.timestamp:
+        elif block.timestamp <= previous_block.timestamp:
             return False
 
         return True
